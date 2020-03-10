@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %> !!</p>
+    <p>Seleccione busqueda de Empleo ségun parametros:</p>
+
+  <form id="jobsForm">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Empleo a buscar </label>
+        <input type="text" class="form-control" id="job" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="Ciudad">Ubicación </label>
+        <input type="text" class="form-control" id="city" placeholder="City or Country">
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">tipo de Empleo</label>
+        <select multiple class="form-control" id="tipoJobs">
+          <option>Full Time</option>
+          <option>Part-Time</option>
+        </select>
+
+        <button type="submit" id="submit" class="btn btn-primary">Enviar </button>
+      </div>
+    </form>
+
+    <div class="card">
+    
+    </div>
+
+    <section id="respuesta">
+
+    </section>
+
+<script src="/javascripts/consult.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
+
+  </body>
+</html>
