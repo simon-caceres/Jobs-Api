@@ -14,7 +14,7 @@ $(document).ready(function(){
           method: "GET"
         }).done(function(data) {
           for (i = 0; i < data.length; i++){
-            $('.card').append(`<div class="card-header"><h3> Cargo: ${data[i].title}</h3></di>`)
+            $('.card').append(`<hr/><div class="card-header"><h3> Cargo: ${data[i].title}</h3></di>`)
              $('.card').append(`<div class="card-header"><h5> Ciudad: ${data[i].location}</h5></div>`)
              $(`.card`).append(`<div class="card-body"><a href="#" onclick="vermas('mas');" id="mas">...[Leer Descripcion]</a><blockquote mb-0" id="desplegar" style="display:none;"><p> Descripcion: </p> <p >  ${data[i].description}</p></blockquote></div>`)
             console.log(consulta);
